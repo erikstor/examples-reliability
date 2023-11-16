@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "69c8f7f5-0de5-4540-8300-a6c02b804f1a",
+		"name": "Presentación",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27310992"
+	},
+	"item": [
+		{
+			"name": "Retry example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/retry-example"
+			},
+			"response": []
+		},
+		{
+			"name": "Fallback example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/fallback-example"
+			},
+			"response": []
+		},
+		{
+			"name": "Circuit Breaker Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/circuit-breaker-example",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"circuit-breaker-example"
+					],
+					"query": [
+						{
+							"key": "bad",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RateLimit example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/api/ejemplo"
+			},
+			"response": []
+		},
+		{
+			"name": "Bulkhead example 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/area1"
+			},
+			"response": []
+		},
+		{
+			"name": "Bulkhead example 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/area2"
+			},
+			"response": []
+		},
+		{
+			"name": "Bulkhead example Pool",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/api/simulated"
+			},
+			"response": []
+		}
+	]
+}
